@@ -389,3 +389,22 @@ body {
     font-size: 24px;
     margin-bottom: 20px;
 }
+
+.proceed-button{
+    text-decoration: none;
+    background:#990000;
+    color:white;
+    border:none;
+    padding:12px 28px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    flex-wrap: nowrap;
+    width: 100%;
+    border: none;
+}
