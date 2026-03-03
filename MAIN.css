@@ -457,3 +457,45 @@ button {
 button:hover {
     background-color: #a0001c;
 }
+
+
+/* Center entire page */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Main Card */
+.container {
+  width: 95%;
+  max-width: 600px;   /* mas malaki */
+  padding: 50px;      /* mas maluwag */
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Upload Box */
+.upload-box {
+  border: 2px dashed #e63946;
+  padding: 40px;      /* mas malaki */
+  border-radius: 12px;
+  margin: 20px 0;
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Button */
+button {
+  padding: 14px 35px;
+  background: #e63946;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
