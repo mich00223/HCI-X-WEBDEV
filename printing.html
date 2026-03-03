@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mug Printing</title>
-    <link rel="stylesheet" href="MAIN.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Printing Order</title>
+  <link rel="stylesheet" href="MAIN.css">
 </head>
 
 <body>
-    
-    <header class="order-navbar">
-        
-       <a href="dashboard.html" class="back-btn">
-        <span class="arrow">&larr;</span>
-       </a>
 
-        <div class="header-text">
-            <h1 class="main-title"> Printing Order</h1>
-            <p class="sub-title">UPRESSease - WMSU </p>
-        </div>
-    </header>
-
-    <body>
 <div class="container">
-    <h2>Upload File</h2>
 
-    <label class="upload-box" for="fileInput">
-        Click to Upload File
+  <h1 class="main-title">Printing Order</h1>
+  <p class="sub-title">UPRESSease - WMSU</p>
+
+  <h2 class="section-title">Upload File</h2>
+
+  <form action="#" method="post" enctype="multipart/form-data">
+
+    <label class="upload-box">
+      Click to Upload File
+      <input type="file" name="file" accept="image/*" required>
     </label>
-    <input type="file" id="fileInput" accept="image/*,.pdf">
 
-    <button>Print</button>
+    <div class="preview">
+      <p class="preview-text">
+        Preview will appear after selecting image (browser dependent).
+      </p>
+    </div>
+
+    <button type="submit">
+      Confirm & Print
+    </button>
+
+  </form>
+
 </div>
 
-    </body>
-
 </body>
-
 </html>
