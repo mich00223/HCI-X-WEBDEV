@@ -209,6 +209,7 @@ button.proceed-button {
   cursor: pointer;
 }
 
+
 /* --- PAYMENT METHOD RADIO BUTTONS --- */
 .radio-group {
     display: flex;
@@ -264,4 +265,82 @@ button.proceed-button {
     max-width: 150px; /* Keeps the QR code a reasonable size */
     border-radius: 8px;
     border: 2px solid #a63131;
+}
+
+/* this is for customization */
+
+/* Container pushing the two sides apart */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px; /* Space between the left box and right fields */
+    margin: 30px auto;
+    max-width: 800px;
+    flex-wrap: wrap; 
+}
+
+/* --- LEFT SIDE: TALL UPLOAD BOX --- */
+.tall-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 380px; /* Taller height to match your drawing! */
+    border: 3px dashed #a63131; 
+    border-radius: 12px;
+    background-color: #fcfcfc;
+    cursor: pointer; 
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+    transition: 0.3s;
+}
+
+.tall-box:hover {
+    background-color: #f0f0f0;
+    border-color: #852626;
+}
+
+/* --- RIGHT SIDE: INPUT FIELDS --- */
+.details-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    width: 100%;
+    max-width: 350px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Styling both standard inputs and the new textarea */
+.form-group input, 
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit; /* Makes sure the font matches the rest of your site */
+}
+
+/* Focus styles for when they click inside the box */
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: #a63131; 
+}
+
+/* Allow users to drag the corner of the notes box to make it bigger */
+.form-group textarea {
+    resize: vertical; 
 }
