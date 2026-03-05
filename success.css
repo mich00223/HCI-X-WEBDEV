@@ -1,0 +1,44 @@
+/* --- SUCCESS PAGE STYLES --- */
+.success-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* This pushes the card into the vertical center of the screen */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.success-card {
+    background-color: white;
+    max-width: 450px;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-top: 5px solid #4CAF50; /* A green accent border at the top for success */
+}
+
+/* The big green checkmark circle */
+.checkmark-circle {
+    background-color: #4CAF50; /* Standard Success Green */
+    color: white;
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px; /* Vertically centers the checkmark inside the circle */
+    border-radius: 50%; /* Makes it a perfect circle */
+    margin: 0 auto 20px auto; /* Centers the circle itself */
+}
+
+.success-card h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.success-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
