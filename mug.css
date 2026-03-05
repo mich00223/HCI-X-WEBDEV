@@ -128,3 +128,83 @@
 .proceed{
     letter-spacing: 1px;
 }
+
+/* Container that holds both the upload box and the text fields */
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px; /* Space between the left and right sides */
+  margin: 50px auto;
+  max-width: 800px;
+  flex-wrap: wrap; /* Allows it to stack vertically on small phone screens */
+}
+
+/* --- LEFT SIDE: The big upload box styling --- */
+.upload-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  border: 2px dashed #a63131; /* Dashed maroon border */
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  cursor: pointer; 
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+  background-color: #f0f0f0;
+  border-color: #852626;
+}
+
+/* --- RIGHT SIDE: The text fields container --- */
+.details-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+  min-width: 300px;
+  font-family: Arial, sans-serif;
+}
+
+.details-section h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+/* Individual field spacing & input styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #a63131; 
+  box-shadow: 0 0 5px rgba(166, 49, 49, 0.3);
+}
+
+/* Overriding the default button look for the form submit */
+button.proceed-button {
+  border: none;
+  cursor: pointer;
+}
